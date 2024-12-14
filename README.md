@@ -42,8 +42,24 @@ pip install -e .
 
 이후, 학습을 시켜야하지만 이미 기존에학습해둔 파일을 저장해두었습니다.
 
-이 저장소 내에 있는 
+이 저장소 내에 있는 counterfactual_results.zip 을 다운받아 압축을 해제하고
+/TABCF 에 저장합니다.
 
+이후 학습된 내용을 불러올 수 있습니다.
+
+## Usage
+The resulting counterfactuals are saved as `.csv` files  under the directory `/counterfactual_results`.
+
+For calculation of all metrics (evaluation), given the generated csv files, run the following command:
+
+```
+python main.py --dataname [NAME_OF_DATASET] --method [METHOD_NAME] --mode evaluate --num_samples 100
+```
+
+```
+NAME_OF_DATASET: lending-club, bank, gmc, default, adult
+METHOD_NAME: dice, revise, wachter, cchvae, tabcf
+```
 
 
 
