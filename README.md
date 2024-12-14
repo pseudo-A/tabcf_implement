@@ -1,6 +1,54 @@
-# TABCF: Counterfactual Explanations for Tabular Data Using a Transformer-Based VAE
+# TABCF: Counterfactual Explanations for Tabular Data Using a Transformer-Based VAE 논문 구현
 
 *This paper has been accepted at the 5th ACM International Conference on AI in Finance (ICAIF '24), November 14-17, 2024, Brooklyn, NY, USA.*
+
+
+해당 논문에서 제시하고 있는 github 데이터를 먼저 다운 받습니다.
+
+
+```
+git clone https://github.com/Panagiotou/TABCF.git
+```
+
+이후, 논문이 제시하고 있는 방법을 따라갑니다.
+
+## Setup
+
+Create a conda environment
+```
+conda create -n tabcf python=3.10
+conda activate tabcf
+```
+Install dependencies 
+```
+pip install -r requirements.txt
+```
+Download and process datasets
+```
+python download_dataset.py
+python process_dataset.py
+```
+
+Install local DiCE optimization framework and local CARLA framework 
+```
+cd baselines/dice/DiCE-main
+pip install -e .
+```
+
+```
+cd baselines/CARLA
+pip install -e .
+```
+
+이후, 학습을 시켜야하지만 이미 기존에학습해둔 파일을 저장해두었습니다.
+
+이 저장소 내에 있는 
+
+
+
+
+아래는 기존 TABCF 논문 구현의 READ_ME 파일 내용입니다.
+
 
 
 <div align="center">
