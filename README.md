@@ -62,8 +62,15 @@ METHOD_NAME: dice, revise, wachter, cchvae, tabcf
 ```
 
 
+예시는 다음과 같습니다.
 
-아래는 기존 TABCF 논문 구현의 READ_ME 파일 내용입니다.
+```
+python main.py --dataname adult --method tabcf --mode evaluate --num_samples 100
+```
+
+
+
+### 아래는 기존 TABCF 논문 구현의 READ_ME 파일 내용입니다.
 
 
 
